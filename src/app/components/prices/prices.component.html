@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col">
+        <h2>Nombre Precio</h2>
+    <ul class="list-group">
+        <li *ngFor='let precio of precios' class="list-group-item">{{precio.versions[0].name}}</li>
+        
+    </ul>
+</div>
+<div class="col">
+    <h2>Monto</h2>
+<ul class="list-group">
+    <li *ngFor='let precio of precios' class="list-group-item">{{precio.versions[0].price.amount}}</li>
+    
+</ul>
+</div>
+</div>
